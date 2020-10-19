@@ -4,27 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #a{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            overflow:visible;
+            margin-bottom:100px;
+            border:black solid 2px;
+        }
+        #b{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            overflow:hidden;
+            margin-bottom:100px;
+            border:black solid 2px;
+
+
+
+        }
+        #c{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            overflow:auto;
+            margin-bottom:100px;
+            border:black solid 2px;
+        }
+        #d{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            overflow:scroll;
+            margin-bottom:100px;
+            border:black solid 2px;
+        }
+       
+
+    </style>
 </head>
 <body>
-
-    <h1>Nhúng video vào trang html</h1>
-
-    <video width="660" height="440" controls autoplay>
-        <source src="League of Legends (TM) Client 2020-09-03 16-43-13_1.mp4" type="video/mp4">
-      Trình duyệt của bạn không hỗ trợ thẻ video
-    </video>
-
-    <h1>Nhúng audio vào trang html</h1>
-
-    <audio controls>
-        <source src="Anna Yvette - Red Line [NCS Release].mp3" type="audio/mpeg">
-      Trình duyệt của bạn không hỗ trợ thẻ audio
-    </audio>
-
-    <h1>Nhúng video youtube vào trang html</h1>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vDfkqjhtiCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <pre>
+        css overflow kiểm soát nội dung khi nội dung quá lớn
+        overflow:visible luôn hiển thị (mặc định)
+        overflow:hidden (ẩn nd vượt quá)
+        overflow:auto (hiển thị scrollbar khi nd tràn ra ngoài và k hiển thị scrollbar khi nd không tràn ) 
+        overflow:scroll (luôn hiển thị scrollbar)
+    </pre>
+    <div id="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempora consequuntur odio distinctio totam iste consectetur alias accusantium, nesciunt ab dolores ullam sunt eveniet doloremque minima architecto. Minima, nesciunt atque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
     
+    </div>
+    <div id="b">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempora consequuntur odio distinctio totam iste consectetur alias accusantium, nesciunt ab dolores ullam sunt eveniet doloremque minima architecto. Minima, nesciunt atque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+    
+    </div>
+    <div id="c">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempora consequuntur odio distinctio totam iste consectetur alias accusantium, nesciunt ab dolores ullam sunt eveniet doloremque minima architecto. Minima, nesciunt atque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+    
+    </div>
+    <div id="d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempora consequuntur odio distinctio totam iste consectetur alias accusantium, nesciunt ab dolores ullam sunt eveniet doloremque minima architecto. Minima, nesciunt atque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel numquam, dignissimos sapiente consectetur doloremque ullam autem, amet perspiciatis eaque magnam illo. Quibusdam labore, voluptate eius necessitatibus beatae voluptates numquam.
+    
+    </div>
+   
+
 </body>
 </html>
